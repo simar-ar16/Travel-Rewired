@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #ffc107;
+    --dark-bg: #1a1a1a;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg) !important;
+    color: #fff !important;
+}
+
+.card {
+    background-color: transparent !important;
+    /* Override bootstrap white default */
+    color: #fff;
+}
+
+/* Glassmorphism Classes */
+.glass-navbar,
+.glass-card,
+.glass-dropdown {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.glass-navbar {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.glass-card {
+    border-radius: 15px;
+    background: rgba(30, 30, 30, 0.6);
+}
+
+.glass-dropdown {
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid #444;
+}
+
+.dropdown-item {
+    color: #eee;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+/* Enhancements */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+a {
+    text-decoration: none;
+}
